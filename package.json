@@ -1,0 +1,20 @@
+{
+  "name": "csvsec",
+  "version": "0.1.0",
+  "description": "导出安全工具:检测并加固 CSV/TSV 导出中的公式注入(CSV Injection),支持批量扫描历史文件",
+  "type": "module",
+  "bin": {
+    "csvsec": "./src/cli.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/",
+    "demo": "node demo/backend.ts",
+    "cli": "node src/cli.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
